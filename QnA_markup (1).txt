@@ -1,0 +1,32 @@
+Title: Eviction Fighter
+Author: Kenneth Johnson
+Description: Basic legal information for tenants facing eviction.
+
+Q(1): Hello and welcome to the Eviction Fighter! I offer   limited self-help resources to help tenants facing eviction in certain cases. Please remember that there are some circumstances where the information I offer may not perfectly apply, such as cases where you obtained your lease as an assignment or sublease from a previous tenant. Remember to contact an attorney such as Legal Aid  if you have any questions or wish to verify the information I provide. Do you live in **[location]**?
+A: Yes.
+	Q(1.1): Do you have a landlord who is trying to evict you?
+	A: Yes.
+		Q(1.1.1): Is your landlord claiming you did not pay rent on time and in full as the reason to evict you?
+		A: Yes.
+			Q(1.1.1.1): Have you paid rent in full and on time as agreed in your lease (written or oral)?
+			A: Yes.
+				Q(1.1.1.1.1): Collect payment receipts, your check register and/or bank/payment card records, and any other evidence of payment. Consider sending copies of these along with **[this letter - consider customizing based on rent amount, term, etc]**.
+				A: (Continue)	
+					Q(1.1.1.1.1.1): Did that resolve your issue?
+					A: Yes.
+					A: No.
+						Q(1.1.1.1.1.1.2): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+						A: (Continue)
+							Q(1.1.1.1.1.1.2.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+							A: (Continue)
+								Q(1.1.1.1.1.1.2.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor. Bring your payment receipts, check register and/or bank/payment card records, and any other evidence of payment. Bring any correspondence between you and your landlord. Bring a copy of your lease. And bring **[this document - consider customizing based on rent amount, terms, etc]** outlining your defense for the court.
+			A: No.
+				Q(1.1.1.1.2): Why did you not pay rent on time and in full as agreed?
+				A: The place I am renting does not comply with local housing codes.
+				A: My landlord often lets me make late and/or partial payments.
+				A: Other reason.
+		A: No.
+	A: No.
+		Q(1.1.2): Thanks for visiting the Eviction Fighter! Share with your friends!
+A: No.
+	Q(1.2): Landlord-tenant laws vary between states and sometimes even between cities. The information from this chatbot might not be accurate for where you live.
