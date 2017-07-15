@@ -23,6 +23,20 @@ A: Yes.
 			A: No.
 				Q(1.1.1.1.2): Why did you not pay rent on time and in full as agreed?
 				A: The place I am renting does not comply with local housing codes.
+					Q(1.1.1.1.2.1): Did you already inform your landlord in writing that you are reducing your rent, to offset the cost of necessary repairs or to match the fair value of the property in its current condition?
+					A: Yes.
+						Q(1.1.1.1.2.1.1): When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
+						A: (Continue)
+							Q(1.1.1.1.2.1.1.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+							A: (Continue)
+								Q(1.1.1.1.2.1.1.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing. 
+					A: No.
+						Q(1.1.1.1.2.1.2): It may be too late to use defects on the premises as a defense to paying rent in full, but send your landlord notice of the defects and a statement that have reduced your rent to match the fair value of the property or to offset the cost of necessary repairs. When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
+						A: (Continue)
+							Q(1.1.1.1.2.1.2.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+							A: (Continue)
+								Q(1.1.1.1.2.1.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.  
+				A: My landlord often lets me make late and/or partial payments.
 				A: My landlord often lets me make late and/or partial payments.
 				A: Other reason.
 		A: No.
