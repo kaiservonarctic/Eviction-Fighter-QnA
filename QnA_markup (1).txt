@@ -29,17 +29,43 @@ A: Yes.
 						A: (Continue)
 							Q(1.1.1.1.2.1.1.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
 							A: (Continue)
-								Q(1.1.1.1.2.1.1.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing. 
+								Q(1.1.1.1.2.1.1.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+								A: (Continue)
+									Q(1.1.1.1.2.1.1.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
 					A: No.
 						Q(1.1.1.1.2.1.2): It may be too late to use defects on the premises as a defense to paying rent in full, but send your landlord notice of the defects and a statement that have reduced your rent to match the fair value of the property or to offset the cost of necessary repairs. When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
 						A: (Continue)
 							Q(1.1.1.1.2.1.2.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
 							A: (Continue)
-								Q(1.1.1.1.2.1.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.  
+								Q(1.1.1.1.2.1.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+								A: (Continue)
+									Q(1.1.1.1.2.1.2.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
 				A: My landlord often lets me make late and/or partial payments.
-				A: My landlord often lets me make late and/or partial payments.
+					Q(1.1.1.1.2.2): If your landlord has accepted late or partial payments in the past, you might have a defense against eviction for making another late or partial payment later. If your lease says the landlord accepting late or partial payment in the past does NOT alter the lease terms, you might not have this defense. Bring past payment receipts, check register and/or bank/payment card records, and any other evidence of past payments. Also bring any evidence of your landlord's acceptance of past late and/or partial payments when you appear in court for the eviction hearing.
+					A: (Continue)
+						Q(1.1.1.1.2.2.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+						A: (Continue)
+							Q(1.1.1.1.2.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing. 
+							A: (Continue)
+								Q(1.1.1.1.2.2.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
 				A: Other reason.
+					Q(1.1.1.1.2.3): I'm afraid it looks like you might not have a strong defense against eviction. Still, appear at the court hearing and bring any evidence which you think might support your reason for not paying rent as agreed.
+					A: (Continue)
+						Q(1.1.1.1.2.3.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+						A: (Continue)
+							Q(1.1.1.1.2.3.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+							A: (Continue)
+								Q(1.1.1.1.2.3.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
 		A: No.
+			Q(1.1.1.2): What is your landlord's reason for wanting to evict you?
+			A: I reported my landlord for housing code or building code violation.
+			A: My race, ethnicity, national origin, religion, gender, disability, or the fact that I have children.
+			A: Landlord claims I used the rental property for illegal activity.
+			A: Landlord claims I damaged the premises.
+			A: Landlord claims I violated a different term of the lease.
+			A: A new landlord bought the property I am renting and claims they can evict me because my lease is with the old landlord.
+			A: Other reason/no reason.
+			
 	A: No.
 		Q(1.1.2): Thanks for visiting the Eviction Fighter! Share with your friends!
 A: No.
