@@ -59,7 +59,24 @@ A: Yes.
 		A: No.
 			Q(1.1.1.2): What is your landlord's reason for wanting to evict you?
 			A: I reported my landlord for housing code or building code violation.
-			A: My race, ethnicity, national origin, religion, gender, disability, or the fact that I have children.
+				Q(1.1.1.2.1): Retaliatory eviction is illegal in most states. In [state], an eviction is presumed to be retaliatory if it takes place within [check statute] days of a tenant's exercise of their legal rights including reports of housing/building code violations. Retaliation in other forms including increased rent and/or harassment is also illegal [check statute]. Is your landlord retaliating within [check statue] days of your report?
+				A: Yes, my landlord is retaliating within [check statute] days of my report.
+					Q(1.1.1.2.1.1): The eviction is therefore presumed retaliatory. It is illegal unless your landlord can show a valid, non-retaliatory reason for eviction. Bring [this document] to court on the date/time of the eviction hearing. It will summarize your argument that your eviction is to be presumed retaliatory as it took place within [check statute] days of your report. Bring evidence of your report, including a copy of the report, any correspondence with the agency to which you reported, correspondence with your landlord, and evidence of the housing/building code violation you reported. Also bring evidence of any other retaliation by the landlord for this report.
+					A: (Continue)					
+						Q(1.1.1.2.1.1.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+						A: (Continue)
+							Q(1.1.1.2.1.1.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+							A: (Continue)
+								Q(1.1.1.2.1.1.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
+				A: No, my landlord is retaliating more than [check statute] days after my report.
+					Q(1.1.1.2.1.2): The eviction will not necessarily be PRESUMED retaliatory, but you may still be able to prove that it is and have it prevented at the eviction hearing at court. Bring [this document] to court on the date/time of the eviction hearing. It will summarize your argument that your eviction is illegal as it is in retaliation for your exercise of your legal rights. Bring evidence of your report, including a copy of the report, any correspondence with the agency to which you reported, correspondence with your landlord, and evidence of the housing/building code violation you reported. Also bring evidence of any other retaliation by the landlord for this report.
+					A: (Continue)
+						Q(1.1.1.2.1.2.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+						A: (Continue)
+							Q(1.1.1.2.1.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+							A: (Continue)
+								Q(1.1.1.2.1.2.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
+ 			A: My race, ethnicity, national origin, religion, gender, disability, or the fact that I have children.
 			A: Landlord claims I used the rental property for illegal activity.
 			A: Landlord claims I damaged the premises.
 			A: Landlord claims I violated a different term of the lease.
