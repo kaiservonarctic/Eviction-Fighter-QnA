@@ -3,170 +3,173 @@ Title: Eviction Fighter
 Author: Kenneth Johnson
 Description: Basic legal information for tenants facing eviction.
 
-Q(1): Hello and welcome to the Eviction Fighter! I offer   limited self-help resources to help tenants facing eviction in certain cases. Please remember that there are some circumstances where the information I offer may not perfectly apply, such as cases where you obtained your lease as an assignment or sublease from a previous tenant. Remember to contact an attorney such as Legal Aid  if you have any questions or wish to verify the information I provide. Do you live in **[location]**?
-A: Yes.
-	Q(1.1): Do you have a landlord who is trying to evict you?
-	A: Yes.
-		Q(1.1.1): Is your landlord claiming you did not pay rent on time and in full as the reason to evict you?
+Q(Welcome): Hello and welcome to the Eviction Fighter! I offer limited self-help resources to help tenants facing eviction in certain cases. Please remember that there are some circumstances where the information I offer may not perfectly apply, such as cases where you obtained your lease as an assignment or sublease from a previous tenant. Remember to contact an attorney such as Legal Aid  if you have any questions or wish to verify the information I provide. Where do you live?
+A(Kentucky): Kentucky.
+	Q(Ky-IsURLTA): Do you live in [Kentucky URLTA jurisdictions] or somewhere else in the state?
+	A(URLTA):
+		Q(1.1): Got it, thanks. Do you have a landlord who is trying to evict you?
 		A: Yes.
-			Q(1.1.1.1): Have you paid rent in full and on time as agreed in your lease (written or oral)?
+			Q(1.1.1): Is your landlord claiming you did not pay rent on time and in full as the reason to evict you?
 			A: Yes.
-				Q(1.1.1.1.1): Collect payment receipts, your check register and/or bank/payment card records, and any other evidence of payment. Consider sending copies of these along with **[this letter - consider customizing based on rent amount, term, etc]**.
-				A: (Continue)	
-					Q(1.1.1.1.1.1): Did that resolve your issue?
-					A: Yes.
-					A: No.
-						Q(1.1.1.1.1.1.2): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
-						A: (Continue)
-							Q(1.1.1.1.1.1.2.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+				Q(1.1.1.1): Have you paid rent in full and on time as agreed in your lease (written or oral)?
+				A: Yes.
+					Q(1.1.1.1.1): Collect payment receipts, your check register and/or bank/payment card records, and any other evidence of payment. Consider sending copies of these along with **[this letter - consider customizing based on rent amount, term, etc]**.
+					A: (Continue)	
+						Q(1.1.1.1.1.1): Did that resolve your issue?
+						A: Yes.
+						A: No.
+							Q(1.1.1.1.1.1.2): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
 							A: (Continue)
-								Q(1.1.1.1.1.1.2.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor. Bring your payment receipts, check register and/or bank/payment card records, and any other evidence of payment. Bring any correspondence between you and your landlord. Bring a copy of your lease. And bring **[this document - consider customizing based on rent amount, terms, etc]** outlining your defense for the court.
+								Q(1.1.1.1.1.1.2.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+								A: (Continue)
+									Q(1.1.1.1.1.1.2.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor. Bring your payment receipts, check register and/or bank/payment card records, and any other evidence of payment. Bring any correspondence between you and your landlord. Bring a copy of your lease. And bring **[this document - consider customizing based on rent amount, terms, etc]** outlining your defense for the court.
+				A: No.
+					Q(1.1.1.1.2): Why did you not pay rent on time and in full as agreed?
+					A: The place I am renting does not comply with local housing codes.
+						Q(1.1.1.1.2.1): Did you already inform your landlord in writing that you are reducing your rent, to offset the cost of necessary repairs or to match the fair value of the property in its current condition?
+						A: Yes.
+							Q(1.1.1.1.2.1.1): When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
+							A: (Continue)
+								Q(1.1.1.1.2.1.1.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+								A: (Continue)
+									Q(1.1.1.1.2.1.1.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+									A: (Continue)
+										Q(1.1.1.1.2.1.1.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
+						A: No.
+							Q(1.1.1.1.2.1.2): It may be too late to use defects on the premises as a defense to paying rent in full, but send your landlord notice of the defects and a statement that have reduced your rent to match the fair value of the property or to offset the cost of necessary repairs. When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
+							A: (Continue)
+								Q(1.1.1.1.2.1.2.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+								A: (Continue)
+									Q(1.1.1.1.2.1.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+									A: (Continue)
+										Q(1.1.1.1.2.1.2.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
+					A: My landlord often lets me make late and/or partial payments.
+						Q(1.1.1.1.2.2): If your landlord has accepted late or partial payments in the past, you might have a defense against eviction for making another late or partial payment later. If your lease says the landlord accepting late or partial payment in the past does NOT alter the lease terms, you might not have this defense. Bring past payment receipts, check register and/or bank/payment card records, and any other evidence of past payments. Also bring any evidence of your landlord's acceptance of past late and/or partial payments when you appear in court for the eviction hearing.
+						A: (Continue)
+							Q(1.1.1.1.2.2.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+							A: (Continue)
+								Q(1.1.1.1.2.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing. 
+								A: (Continue)
+									Q(1.1.1.1.2.2.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
+					A: Other reason.
+						Q(1.1.1.1.2.3): I'm afraid it looks like you might not have a strong defense against eviction. Still, appear at the court hearing and bring any evidence which you think might support your reason for not paying rent as agreed.
+						A: (Continue)
+							Q(1.1.1.1.2.3.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+							A: (Continue)
+								Q(1.1.1.1.2.3.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+								A: (Continue)
+									Q(1.1.1.1.2.3.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
 			A: No.
-				Q(1.1.1.1.2): Why did you not pay rent on time and in full as agreed?
-				A: The place I am renting does not comply with local housing codes.
-					Q(1.1.1.1.2.1): Did you already inform your landlord in writing that you are reducing your rent, to offset the cost of necessary repairs or to match the fair value of the property in its current condition?
+				Q(1.1.1.2): What is your landlord's reason for wanting to evict you?
+				A: I reported my landlord for housing code or building code violation.
+					Q(1.1.1.2.1): Retaliatory eviction is illegal in most states. In [state], an eviction is presumed to be retaliatory if it takes place within [check statute] days of a tenant's exercise of their legal rights including reports of housing/building code violations. Retaliation in other forms including increased rent and/or harassment is also illegal [check statute]. Is your landlord retaliating within [check statue] days of your report?
+					A: Yes, my landlord is retaliating within [check statute] days of my report.
+						Q(1.1.1.2.1.1): The eviction is therefore presumed retaliatory. It is illegal unless your landlord can show a valid, non-retaliatory reason for eviction. Bring [this document] to court on the date/time of the eviction hearing. It will summarize your argument that your eviction is to be presumed retaliatory as it took place within [check statute] days of your report. Bring evidence of your report, including a copy of the report, any correspondence with the agency to which you reported, correspondence with your landlord, and evidence of the housing/building code violation you reported. Also bring evidence of any other retaliation by the landlord for this report.
+						A: (Continue)					
+							Q(1.1.1.2.1.1.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+							A: (Continue)
+								Q(1.1.1.2.1.1.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+								A: (Continue)
+									Q(1.1.1.2.1.1.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
+					A: No, my landlord is retaliating more than [check statute] days after my report.
+						Q(1.1.1.2.1.2): The eviction will not necessarily be PRESUMED retaliatory, but you may still be able to prove that it is and have it prevented at the eviction hearing at court. Bring [this document] to court on the date/time of the eviction hearing. It will summarize your argument that your eviction is illegal as it is in retaliation for your exercise of your legal rights. Bring evidence of your report, including a copy of the report, any correspondence with the agency to which you reported, correspondence with your landlord, and evidence of the housing/building code violation you reported. Also bring evidence of any other retaliation by the landlord for this report.
+						A: (Continue)
+							Q(1.1.1.2.1.2.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+							A: (Continue)
+								Q(1.1.1.2.1.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+								A: (Continue)
+									Q(1.1.1.2.1.2.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
+				A: My race, ethnicity, national origin, religion, gender, disability, or the fact that I have children.
+					Q(1.1.1.2.2): Tenants and potential tenants are protected from racial or ethnic discrimination by the Civil Rights Act of 1866, and protected from  ethnic, religious, national origin, gender, and disability discrimination by the Fair Housing Act. The Fair Housing Act also bars discriminating against families with children, except in senior citizen housing.
+					A: (Continue)
+						Q(1.1.1.2.2.1): You cannot be evicted for these reasons, and your landlord may be subject to separate legal consequences for violating these laws. Local agencies which investigate housing discrimination are [names and links to agencies]. Bring [this document] to court on the date/time of the eviction hearing. It will summarize your argument that your eviction is an act of illegal discrimination. Bring evidence supporting your defense that the eviction is discriminatory, the agencies listed above and Legal Aid can help you determine the best evidence to bring to court.
+						A: (Continue)
+							Q(1.1.1.2.2.1.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+							A: (Continue)
+								Q(1.1.1.2.2.1.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+								A: (Continue)
+									Q(1.1.1.2.2.1.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
+				A: Landlord claims I used the premises for illegal activity.
+					Q(1.1.1.2.3): It will be the landlord's duty to prove your illegal activity and that you used the rented premises for this illegal activity. If the landlord cannot prove their case, the eviction will not be permitted. An arrest report or other police report is a common means for a landlord to prove their case. In your jurisdiction, a landlord can evict for [list legal offenses and frequency for which landlord may evict, noting limitations].
+					A: (Continue)
+						Q(1.1.1.2.3.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+						A: (Continue)
+							Q(1.1.1.2.3.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+							A: (Continue)
+								Q(1.1.1.2.3.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
+				A: Landlord claims I damaged the premises.
+					Q(1.1.1.2.4): Is the damage ordinary wear and tear?
 					A: Yes.
-						Q(1.1.1.1.2.1.1): When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
+						Q(1.1.1.2.4.1): *Unless your lease says differently*, a tenant is not liable for ordinary wear and tear. The landlord would need to prove that the damage was more than ordinary wear and tear to take action against you. Explain to your landlord that you may not be evicted for ordinary wear and tear.  
 						A: (Continue)
-							Q(1.1.1.1.2.1.1.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+							Q(1.1.1.2.4.1.1): If that does not work, try the following:  Since the landlord would have to prove the damage in question is more than ordinary wear and tear, bring your own photos and other documentation of the damage to prove that it is ordinary wear and tear. 
 							A: (Continue)
-								Q(1.1.1.1.2.1.1.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
-								A: (Continue)
-									Q(1.1.1.1.2.1.1.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
+								Q(1.1.1.2.4.1.1.1): Also, bring documentation of damage which existed when you first moved to the premises. If you think the damage may be determined more than ordinary wear and tear by a judge, restart this bot and answer "no" when asked if the damage is ordinary wear and tear for more information.
+								A: (Continue) GOTO [hearing requirement]
 					A: No.
-						Q(1.1.1.1.2.1.2): It may be too late to use defects on the premises as a defense to paying rent in full, but send your landlord notice of the defects and a statement that have reduced your rent to match the fair value of the property or to offset the cost of necessary repairs. When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
-						A: (Continue)
-							Q(1.1.1.1.2.1.2.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
-							A: (Continue)
-								Q(1.1.1.1.2.1.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+						Q(1.1.1.2.4.2): Did you cause the damage?
+						A: Yes.
+							Q(1.1.1.2.4.2.1): Does the lease allow the landlord to evict you for damaging the premises beyond ordinary wear and tear?
+							A: Yes.
+								Q(1.1.1.2.4.2.1.1): The landlord will still have to prove that you actually caused the damage. They will also have to prove that the lease allows them to evict you for causing this damage.
 								A: (Continue)
-									Q(1.1.1.1.2.1.2.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
-				A: My landlord often lets me make late and/or partial payments.
-					Q(1.1.1.1.2.2): If your landlord has accepted late or partial payments in the past, you might have a defense against eviction for making another late or partial payment later. If your lease says the landlord accepting late or partial payment in the past does NOT alter the lease terms, you might not have this defense. Bring past payment receipts, check register and/or bank/payment card records, and any other evidence of past payments. Also bring any evidence of your landlord's acceptance of past late and/or partial payments when you appear in court for the eviction hearing.
-					A: (Continue)
-						Q(1.1.1.1.2.2.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+									Q(1.1.1.2.4.2.1.1.1): When you go to court, bring a copy of the lease as well as any proof that you did not cause the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court.
+									A: (Continue) GOTO [hearing requirement]
+							A: No.
+								Q(1.1.1.2.4.2.1.2): If the lease prohibits eviction for this issue, you cannot be legally evicted for it. If the lease is silent on the matter, there still could be a chance that a judge would allow eviction. 
+								A: (Continue)
+									Q(1.1.1.2.4.2.1.2.1): Bring a copy of your lease to court to point out that eviction is either prohibited, or that it is at least not required. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court.
+									A: (Continue) GOTO [hearing requirement]
+						A: No.
+							Q(1.1.1.2.4.2.2): Does the lease require you to repair the damage in question, and allow the landlord to evict you for failing to do so?
+							A: Yes.
+								Q(1.1.1.2.4.2.2.1): The landlord will still have to prove that you failed to repair the damage. They will also have to prove that the lease allows them to evict you for failing to repair this damage.
+								A: (Continue)
+									Q(1.1.1.2.4.2.2.1.1): When you go to court, bring a copy of the lease as well as any proof that you did  repair the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court.
+									A: (Continue) GOTO [hearing requirement]
+							A: No.
+								Q(1.1.1.2.4.2.2.2): If the lease prohibits eviction for this issue, you cannot be legally evicted for it. If the lease is silent on the matter, there still could be a chance that a judge would allow eviction. 
+								A: (Continue)
+									Q(1.1.1.2.4.2.2.2.1): Bring a copy of your lease to court to point out that eviction is either prohibited, or that it is at least not required. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court.
+									A: (Continue) GOTO [hearing requirement]
+				A: Landlord claims I violated a different term of the lease.
+					Q(1.1.1.2.5): Check your lease, is the term in question actually written in the lease?
+					A: Yes.
+						Q(1.1.1.2.5.1): The landlord will still have to prove that you actually violated this term of the lease. When you go to court, bring a copy of the lease as well as any proof that you did not violate that term of the lease. This will help increase the odds that the judge will find in your favor.
+						A: (Continue) GOTO [hearing requirement]
+					A: No.
+						Q(1.1.1.2.5.2): Many written leases include a clause explaining that nothing outside of that document is part of the lease. This means no prior agreements matter. It also means no other agreements at the time of signing the lease or after the time of signing the lease matter, unless those are signed and agreed by you and the landlord.
 						A: (Continue)
-							Q(1.1.1.1.2.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing. 
-							A: (Continue)
-								Q(1.1.1.1.2.2.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
-				A: Other reason.
-					Q(1.1.1.1.2.3): I'm afraid it looks like you might not have a strong defense against eviction. Still, appear at the court hearing and bring any evidence which you think might support your reason for not paying rent as agreed.
-					A: (Continue)
-						Q(1.1.1.1.2.3.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
-						A: (Continue)
-							Q(1.1.1.1.2.3.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
-							A: (Continue)
-								Q(1.1.1.1.2.3.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
-		A: No.
-			Q(1.1.1.2): What is your landlord's reason for wanting to evict you?
-			A: I reported my landlord for housing code or building code violation.
-				Q(1.1.1.2.1): Retaliatory eviction is illegal in most states. In [state], an eviction is presumed to be retaliatory if it takes place within [check statute] days of a tenant's exercise of their legal rights including reports of housing/building code violations. Retaliation in other forms including increased rent and/or harassment is also illegal [check statute]. Is your landlord retaliating within [check statue] days of your report?
-				A: Yes, my landlord is retaliating within [check statute] days of my report.
-					Q(1.1.1.2.1.1): The eviction is therefore presumed retaliatory. It is illegal unless your landlord can show a valid, non-retaliatory reason for eviction. Bring [this document] to court on the date/time of the eviction hearing. It will summarize your argument that your eviction is to be presumed retaliatory as it took place within [check statute] days of your report. Bring evidence of your report, including a copy of the report, any correspondence with the agency to which you reported, correspondence with your landlord, and evidence of the housing/building code violation you reported. Also bring evidence of any other retaliation by the landlord for this report.
-					A: (Continue)					
-						Q(1.1.1.2.1.1.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
-						A: (Continue)
-							Q(1.1.1.2.1.1.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
-							A: (Continue)
-								Q(1.1.1.2.1.1.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
-				A: No, my landlord is retaliating more than [check statute] days after my report.
-					Q(1.1.1.2.1.2): The eviction will not necessarily be PRESUMED retaliatory, but you may still be able to prove that it is and have it prevented at the eviction hearing at court. Bring [this document] to court on the date/time of the eviction hearing. It will summarize your argument that your eviction is illegal as it is in retaliation for your exercise of your legal rights. Bring evidence of your report, including a copy of the report, any correspondence with the agency to which you reported, correspondence with your landlord, and evidence of the housing/building code violation you reported. Also bring evidence of any other retaliation by the landlord for this report.
-					A: (Continue)
-						Q(1.1.1.2.1.2.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
-						A: (Continue)
-							Q(1.1.1.2.1.2.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
-							A: (Continue)
-								Q(1.1.1.2.1.2.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
-			A: My race, ethnicity, national origin, religion, gender, disability, or the fact that I have children.
-				Q(1.1.1.2.2): Tenants and potential tenants are protected from racial or ethnic discrimination by the Civil Rights Act of 1866, and protected from  ethnic, religious, national origin, gender, and disability discrimination by the Fair Housing Act. The Fair Housing Act also bars discriminating against families with children, except in senior citizen housing.
-				A: (Continue)
-					Q(1.1.1.2.2.1): You cannot be evicted for these reasons, and your landlord may be subject to separate legal consequences for violating these laws. Local agencies which investigate housing discrimination are [names and links to agencies]. Bring [this document] to court on the date/time of the eviction hearing. It will summarize your argument that your eviction is an act of illegal discrimination. Bring evidence supporting your defense that the eviction is discriminatory, the agencies listed above and Legal Aid can help you determine the best evidence to bring to court.
-					A: (Continue)
-						Q(1.1.1.2.2.1.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
-						A: (Continue)
-							Q(1.1.1.2.2.1.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
-							A: (Continue)
-								Q(1.1.1.2.2.1.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
-			A: Landlord claims I used the premises for illegal activity.
-				Q(1.1.1.2.3): It will be the landlord's duty to prove your illegal activity and that you used the rented premises for this illegal activity. If the landlord cannot prove their case, the eviction will not be permitted. An arrest report or other police report is a common means for a landlord to prove their case. In your jurisdiction, a landlord can evict for [list legal offenses and frequency for which landlord may evict, noting limitations].
-				A: (Continue)
-					Q(1.1.1.2.3.1): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
-					A: (Continue)
-						Q(1.1.1.2.3.1.1): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
-						A: (Continue)
-							Q(1.1.1.2.3.1.1.1): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor.
-			A: Landlord claims I damaged the premises.
-				Q(1.1.1.2.4): Is the damage ordinary wear and tear?
-				A: Yes.
-					Q(1.1.1.2.4.1): *Unless your lease says differently*, a tenant is not liable for ordinary wear and tear. The landlord would need to prove that the damage was more than ordinary wear and tear to take action against you. Explain to your landlord that you may not be evicted for ordinary wear and tear.  
-					A: (Continue)
-						Q(1.1.1.2.4.1.1): If that does not work, try the following:  Since the landlord would have to prove the damage in question is more than ordinary wear and tear, bring your own photos and other documentation of the damage to prove that it is ordinary wear and tear. 
-						A: (Continue)
-							Q(1.1.1.2.4.1.1.1): Also, bring documentation of damage which existed when you first moved to the premises. If you think the damage may be determined more than ordinary wear and tear by a judge, restart this bot and answer "no" when asked if the damage is ordinary wear and tear for more information.
+							Q(1.1.1.2.5.2.1): The landlord will have to prove that the term you "violated" is actually in the lease. They will also have to prove you actually violated that term. When you go to court, bring a copy of the lease to prove that the term is not part of it. Also bring any proof that you did not commit the "violation" in question just in case the judge were to find that the term actually is a part of the lease for any reason.
 							A: (Continue) GOTO [hearing requirement]
-				A: No.
-					Q(1.1.1.2.4.2): Did you cause the damage?
-					A: Yes.
-						Q(1.1.1.2.4.2.1): Does the lease allow the landlord to evict you for damaging the premises beyond ordinary wear and tear?
-						A: Yes.
-							Q(1.1.1.2.4.2.1.1): The landlord will still have to prove that you actually caused the damage. They will also have to prove that the lease allows them to evict you for causing this damage.
-							A: (Continue)
-								Q(1.1.1.2.4.2.1.1.1): When you go to court, bring a copy of the lease as well as any proof that you did not cause the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court.
-								A: (Continue) GOTO [hearing requirement]
-						A: No.
-							Q(1.1.1.2.4.2.1.2): If the lease prohibits eviction for this issue, you cannot be legally evicted for it. If the lease is silent on the matter, there still could be a chance that a judge would allow eviction. 
-							A: (Continue)
-								Q(1.1.1.2.4.2.1.2.1): Bring a copy of your lease to court to point out that eviction is either prohibited, or that it is at least not required. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court.
-								A: (Continue) GOTO [hearing requirement]
-					A: No.
-						Q(1.1.1.2.4.2.2): Does the lease require you to repair the damage in question, and allow the landlord to evict you for failing to do so?
-						A: Yes.
-							Q(1.1.1.2.4.2.2.1): The landlord will still have to prove that you failed to repair the damage. They will also have to prove that the lease allows them to evict you for failing to repair this damage.
-							A: (Continue)
-								Q(1.1.1.2.4.2.2.1.1): When you go to court, bring a copy of the lease as well as any proof that you did  repair the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court.
-								A: (Continue) GOTO [hearing requirement]
-						A: No.
-							Q(1.1.1.2.4.2.2.2): If the lease prohibits eviction for this issue, you cannot be legally evicted for it. If the lease is silent on the matter, there still could be a chance that a judge would allow eviction. 
-							A: (Continue)
-								Q(1.1.1.2.4.2.2.2.1): Bring a copy of your lease to court to point out that eviction is either prohibited, or that it is at least not required. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court.
-								A: (Continue) GOTO [hearing requirement]
-			A: Landlord claims I violated a different term of the lease.
-				Q(1.1.1.2.5): Check your lease, is the term in question actually written in the lease?
-				A: Yes.
-					Q(1.1.1.2.5.1): The landlord will still have to prove that you actually violated this term of the lease. When you go to court, bring a copy of the lease as well as any proof that you did not violate that term of the lease. This will help increase the odds that the judge will find in your favor.
-					A: (Continue) GOTO [hearing requirement]
-				A: No.
-					Q(1.1.1.2.5.2): Many written leases include a clause explaining that nothing outside of that document is part of the lease. This means no prior agreements matter. It also means no other agreements at the time of signing the lease or after the time of signing the lease matter, unless those are signed and agreed by you and the landlord.
+				A: A new landlord bought the property I am renting and claims they can evict me because my lease is with the old landlord.
+					Q(1.1.1.2.6): When your previous landlord sells to a new landlord, your lease does not end. Your new landlord is responsible for honoring the terms of the existing lease, as are you. You must now pay rent to the new landlord, but as long as you do so and avoid violating other terms of the lease, you may not be evicted simply because a new landlord owns the premises. Try giving your new landlord [this letter] explaining this fact in case they are not yet aware. Hopefully they will honor the existing lease once they understand their duty to do so.
 					A: (Continue)
-						Q(1.1.1.2.5.2.1): The landlord will have to prove that the term you "violated" is actually in the lease. They will also have to prove you actually violated that term. When you go to court, bring a copy of the lease to prove that the term is not part of it. Also bring any proof that you did not commit the "violation" in question just in case the judge were to find that the term actually is a part of the lease for any reason.
+						Q(1.1.1.2.6.1): If the landlord persists in their claim after receiving your letter, bring [this document] to court on the day of the eviction hearing. It will explain your argument that the new landlord must honor the existing agreement. Bring a copy of the letter you gave to the landlord in case the court asks to see it. Also bring a copy of the lease to prove the existing agreement. Bring all other proof of the existing agreement if you do not have a written lease.
 						A: (Continue) GOTO [hearing requirement]
-			A: A new landlord bought the property I am renting and claims they can evict me because my lease is with the old landlord.
-				Q(1.1.1.2.6): When your previous landlord sells to a new landlord, your lease does not end. Your new landlord is responsible for honoring the terms of the existing lease, as are you. You must now pay rent to the new landlord, but as long as you do so and avoid violating other terms of the lease, you may not be evicted simply because a new landlord owns the premises. Try giving your new landlord [this letter] explaining this fact in case they are not yet aware. Hopefully they will honor the existing lease once they understand their duty to do so.
-				A: (Continue)
-					Q(1.1.1.2.6.1): If the landlord persists in their claim after receiving your letter, bring [this document] to court on the day of the eviction hearing. It will explain your argument that the new landlord must honor the existing agreement. Bring a copy of the letter you gave to the landlord in case the court asks to see it. Also bring a copy of the lease to prove the existing agreement. Bring all other proof of the existing agreement if you do not have a written lease.
-					A: (Continue) GOTO [hearing requirement]
-			A: Other reason/no reason.
-				Q(1.1.1.2.7): Will your lease term be expired when your landlord wants you to leave?
-				A: Yes.
-					Q(1.1.1.2.7.1): If you have a "term of years" lease and your landlord declined to renew at the end of the term, this is regular termination rather than eviction.
-				A: No.
-					Q(1.1.1.2.7.2): You cannot be evicted without valid reason before the lease term expires. Consider sending [this letter] to your landlord explaining that you have a right to possession throughout the lease term as long as you pay rent as agreed in the terms of the lease.
-					A: (Continue) GOTO [hearing requirement]
-				A: My lease is month-to-month or week-to-week.
-					Q(1.1.1.2.7.3): Did your landlord give you notice to vacate of at least one lease "period"? (one month if month-to-month, one week if week-to-week, etc.)
+				A: Other reason/no reason.
+					Q(1.1.1.2.7): Will your lease term be expired when your landlord wants you to leave?
 					A: Yes.
-						Q(1.1.1.2.7.3.1): A landlord may terminate this form of lease with at least one "period" of notice. This is not eviction and is legal.
+						Q(1.1.1.2.7.1): If you have a "term of years" lease and your landlord declined to renew at the end of the term, this is regular termination rather than eviction.
 					A: No.
-						Q(1.1.1.2.7.3.2): You cannot be evicted without proper notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. Consider sending [this letter] to your landlord explaining that you have a right to possession until proper notice to vacate is given.
+						Q(1.1.1.2.7.2): You cannot be evicted without valid reason before the lease term expires. Consider sending [this letter] to your landlord explaining that you have a right to possession throughout the lease term as long as you pay rent as agreed in the terms of the lease.
 						A: (Continue) GOTO [hearing requirement]
-				A: My lease is for no fixed duration (“at will”).
-					Q(1.1.1.2.7.4): Did your landlord give you reasonable notice to vacate? [find "reasonable" notice for this jurisdiction]
-					A: Yes.
-						Q(1.1.1.2.7.4.1): A landlord may terminate an "at will" lease with "reasonable" notice. This is not eviction and is legal. However, you may want to contact legal aid or another attorney if you believe you were not given reasonable notice to vacate.
-					A: No.
-						Q(1.1.1.2.7.4.2): In most jurisdictions, you cannot be evicted without reasonable notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. Consider sending [this letter] to your landlord explaining that you have a right to possession until proper notice to vacate is given.
-						A: (Continue) GOTO [hearing requirement]
-	A: No.
-		Q(1.1.2): Thanks for visiting the Eviction Fighter! Share with your friends!
-A: No.
-	Q(1.2): Landlord-tenant laws vary between states and sometimes even between cities. The information from this chatbot might not be accurate for where you live.
+					A: My lease is month-to-month or week-to-week.
+						Q(1.1.1.2.7.3): Did your landlord give you notice to vacate of at least one lease "period"? (one month if month-to-month, one week if week-to-week, etc.)
+						A: Yes.
+							Q(1.1.1.2.7.3.1): A landlord may terminate this form of lease with at least one "period" of notice. This is not eviction and is legal.
+						A: No.
+							Q(1.1.1.2.7.3.2): You cannot be evicted without proper notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. Consider sending [this letter] to your landlord explaining that you have a right to possession until proper notice to vacate is given.
+							A: (Continue) GOTO [hearing requirement]
+					A: My lease is for no fixed duration (“at will”).
+						Q(1.1.1.2.7.4): Did your landlord give you reasonable notice to vacate? [find "reasonable" notice for this jurisdiction]
+						A: Yes.
+							Q(1.1.1.2.7.4.1): A landlord may terminate an "at will" lease with "reasonable" notice. This is not eviction and is legal. However, you may want to contact legal aid or another attorney if you believe you were not given reasonable notice to vacate.
+						A: No.
+							Q(1.1.1.2.7.4.2): In most jurisdictions, you cannot be evicted without reasonable notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. Consider sending [this letter] to your landlord explaining that you have a right to possession until proper notice to vacate is given.
+							A: (Continue) GOTO [hearing requirement]
+		A: No.
+			Q(1.1.2): Thanks for visiting the Eviction Fighter! Share with your friends!
+	A(NotURLTA): [copy urlta template and adjust as needed]
+A(Other): Other
+	Q(No bot for jurisdiction): Landlord-tenant laws vary between states and sometimes even between cities. The information from this chatbot might not be accurate for where you live.
