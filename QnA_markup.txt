@@ -17,7 +17,7 @@ A(LocationKentucky): Kentucky.
 					A: Continue	
 						Q(Resolution-Check): Did that resolve your issue?
 						A: Yes.
-							Q: Great! GOTO:ThankYou
+							Q(Resolved): Great! GOTO:ThankYou
 						A: No.
 							Q: GOTO:Court-Order-Requirement
 				A(Rent-not-paid): No.
@@ -25,13 +25,13 @@ A(LocationKentucky): Kentucky.
 					A(NotPaidBecause-housing-defective): The place I am renting does not comply with local housing codes.
 						Q(Housing-Defective-Ask-InformedLL): Did you already inform your landlord in writing that you are reducing your rent, to offset the cost of necessary repairs or to match the fair value of the property in its current condition?
 						A(Housing-defective-informedLL-yes): Yes.
-							Q(Instructions-Defective-InformedLL-Yes): When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
+							Q(Instructions-InformedLL-Yes): When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
 							A: Continue
-								Q: GOTO:Court-Order-Requirement
+								Q(InformedLL-Yes-End): GOTO:Court-Order-Requirement
 						A(Housing-defective-informedLL-yes): No.
-							Q(Instructions-Defective-InformedLL-No): It may be too late to use defects on the premises as a defense to paying rent in full, but send your landlord notice of the defects and a statement that have reduced your rent to match the fair value of the property or to offset the cost of necessary repairs. When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
+							Q(Instructions-InformedLL-No): It may be too late to use defects on the premises as a defense to paying rent in full, but send your landlord notice of the defects and a statement that have reduced your rent to match the fair value of the property or to offset the cost of necessary repairs. When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects.
 							A: Continue
-								Q: GOTO:Court-Order-Requirement
+								Q(InformedLL-No-End): GOTO:Court-Order-Requirement
 					A(NotPaidBecause-latepay-allowed): My landlord often lets me make late and/or partial payments.
 						Q(Instructions-Latepay-Allowed): If your landlord has accepted late or partial payments in the past, you might have a defense against eviction for making another late or partial payment later. If your lease says the landlord accepting late or partial payment in the past does NOT alter the lease terms, you might not have this defense. Bring past payment receipts, check register and/or bank/payment card records, and any other evidence of past payments. Also bring any evidence of your landlord's acceptance of past late and/or partial payments when you appear in court for the eviction hearing.
 						A: Continue
