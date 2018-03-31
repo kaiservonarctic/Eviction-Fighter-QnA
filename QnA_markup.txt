@@ -6,12 +6,12 @@ Description: Basic legal information for tenants facing eviction.
 Q(Welcome): Hello and welcome to the Eviction Fighter! I offer limited self-help resources to help tenants facing eviction in certain cases. Please remember that there are some circumstances where the information I offer may not perfectly apply, such as cases where you obtained your lease as an assignment or sublease from a previous tenant. Remember to contact an attorney such as Legal Aid  if you have any questions or wish to verify the information I provide. Where do you live?
 A: Kentucky.
 	Q(KyCheckIfURLTA): Do you live in [Kentucky URLTA jurisdictions] or somewhere else in the state?
-	A: Yes.
+	A: Yes I live in [urlta section of the state].
 		Q(CheckIfEviction): Got it, thanks. Do you have a landlord who is trying to evict you?
 		A: Yes.
 			Q(CheckIfReasonRent): Is your landlord claiming you did not pay rent on time and in full as the reason to evict you?
 			A: Yes.
-				Q(CheckIfRentPaid): Have you paid rent in full and on time as agreed in your lease (written or oral)?
+				Q(CheckIfRentPaid): Have you paid rent and any applicable late fees in full and on time as agreed in your lease (written or oral)?
 				A: Yes.
 					Q(DOC-RENTPAID-LETTER): Collect payment receipts, your check register and/or bank/payment card records, and any other evidence of payment. Consider sending copies of these along with the following letter: **[DOC - consider customizing based on rent amount, term, etc]**.
 					A: Continue
@@ -30,6 +30,8 @@ A: Kentucky.
 							Q(InstructionsInformedLLNo): It may be too late to use defects on the premises as a defense to paying rent in full, but send your landlord notice of the defects and a statement that have reduced your rent to match the fair value of the property or to offset the cost of necessary repairs. When you appear in court for the eviction hearing, bring a copy of the written notice you sent the landlord. Also bring proof of rent payments you did make, evidence of defects on the rental property, and evidence of any repair or other costs incurred as a result of those defects. GOTO:CourtOrderRequirement
 					A: My landlord often lets me make late and/or partial payments.
 						Q(InstructionsLatepayAllowed): If your landlord has accepted late or partial payments in the past, you might have a defense against eviction for making another late or partial payment later. If your lease says the landlord accepting late or partial payment in the past does NOT alter the lease terms, you might not have this defense. Bring past payment receipts, check register and/or bank/payment card records, and any other evidence of past payments. Also bring any evidence of your landlord's acceptance of past late and/or partial payments when you appear in court for the eviction hearing. GOTO:CourtOrderRequirement
+					A: The late fees are not reasonable.
+						Q:
 					A: Other reason.
 						Q(InstructionsOther): I'm afraid it looks like you might not have a strong defense against eviction. Still, appear at the court hearing and bring any evidence which you think might support your reason for not paying rent as agreed. GOTO:CourtOrderRequirement
 			A: No.
@@ -108,7 +110,119 @@ A: Kentucky.
 			Q(ThankYou): Thanks for visiting the Eviction Fighter! Share with your friends!
 
 
-	A: [copy urlta template and adjust as needed]
+
+
+
+
+
+
+
+
+
+
+
+
+	A: I live in another part of the state. [copy urlta template and adjust as needed]
+		Q(CheckIfEviction2): Got it, thanks. Do you have a landlord who is trying to evict you?
+		A: Yes.
+			Q(CheckIfReasonRent2): Is your landlord claiming you did not pay rent on time and in full as the reason to evict you?
+			A: Yes.
+				Q(CheckIfRentPaid2): Have you paid rent and any applicable late fees in full and on time as agreed in your lease (written or oral)?
+				A: Yes.
+					Q(DOC-RENTPAID-LETTER2): Collect payment receipts, your check register and/or bank/payment card records, and any other evidence of payment. Consider sending copies of these along with the following letter: **[DOC - consider customizing based on rent amount, term, etc]**.
+					A: Continue
+						Q(ResolutionCheck2): Did that resolve your issue?
+						A: Yes.
+							Q(Resolved2): Great! GOTO:ThankYou
+						A: No.
+							Q(1.1.1.1.1.1.1.2): GOTO:CourtOrderRequirement
+				A: No.
+					Q(CheckWhyNotPaid2): Why did you not pay rent on time and in full as agreed?
+					A: My landlord often lets me make late and/or partial payments.
+						Q(InstructionsLatepayAllowed2): If your landlord has accepted late or partial payments in the past, you might have a defense against eviction for making another late or partial payment later. If your lease says the landlord accepting late or partial payment in the past does NOT alter the lease terms, you might not have this defense. Bring past payment receipts, check register and/or bank/payment card records, and any other evidence of past payments. Also bring any evidence of your landlord's acceptance of past late and/or partial payments when you appear in court for the eviction hearing. GOTO:CourtOrderRequirement
+					A: The late fees are not reasonable.
+						Q:
+					A: Other reason.
+						Q(InstructionsOther2): I'm afraid it looks like you might not have a strong defense against eviction. Still, appear at the court hearing and bring any evidence which you think might support your reason for not paying rent as agreed. GOTO:CourtOrderRequirement
+			A: No.
+				Q(CheckWhichReasonOther2): What is your landlord's reason for wanting to evict you?
+				A: My race, ethnicity, national origin, religion, gender, disability, or the fact that I have children.
+					Q(ExplainerDiscrimination2): Tenants and potential tenants are protected from racial or ethnic discrimination by the Civil Rights Act of 1866, and protected from  ethnic, religious, national origin, gender, and disability discrimination by the Fair Housing Act. The Fair Housing Act also bars discriminating against families with children, except in senior citizen housing.
+					A: Continue
+						Q(InstructionsDiscriminationDOC2): You cannot be evicted for these reasons, and your landlord may be subject to separate legal consequences for violating these laws. Local agencies which investigate housing discrimination are [names and links to agencies]. Bring **[this document]** to court on the date/time of the eviction hearing. It will summarize your argument that your eviction is an act of illegal discrimination. Bring evidence supporting your defense that the eviction is discriminatory, the agencies listed above and Legal Aid can help you determine the best evidence to bring to court. GOTO:CourtOrderRequirement
+				A: Landlord claims I used the premises for illegal activity.
+					Q(InstructionsIllegalActivity2): It will be the landlord's duty to prove your illegal activity and that you used the rented premises for this illegal activity. If the landlord cannot prove their case, the eviction will not be permitted. An arrest report or other police report is a common means for a landlord to prove their case. In your jurisdiction, a landlord can evict for [list legal offenses and frequency for which landlord may evict, noting limitations]. GOTO:CourtOrderRequirement
+				A: Landlord claims I damaged the premises.
+					Q(CheckIfWearTear2):Is the damage ordinary wear and tear?
+					A: Yes.
+						Q(Instructions1WearTear2): *Unless your lease says differently*, a tenant is not liable for ordinary wear and tear. The landlord would need to prove that the damage was more than ordinary wear and tear to take action against you. Explain to your landlord that you may not be evicted for ordinary wear and tear.  
+						A: Continue
+							Q(Instructions2WearTear2): If that does not work, try the following:  Since the landlord would have to prove the damage in question is more than ordinary wear and tear, bring your own photos and other documentation of the damage to prove that it is ordinary wear and tear. 
+							A: Continue
+								Q(Instructions3WearTear2): Also, bring documentation of damage which existed when you first moved to the premises. If you think the damage may be determined more than ordinary wear and tear by a judge, restart this bot and answer "no" when asked if the damage is ordinary wear and tear for more information. GOTO:CourtOrderRequirement
+					A: No.
+						Q(CheckIfTenantCausedDamaged2): Did you cause the damage?
+						A: Yes.
+							Q(CheckIfLeaseIncludeDamageEviction): Does the lease allow the landlord to evict you for damaging the premises beyond ordinary wear and tear?
+							A: Yes.
+								Q(ExplainerLeaseIncludeDamageEviction2): The landlord will still have to prove that you actually caused the damage. They will also have to prove that the lease allows them to evict you for causing this damage.
+								A: Continue
+									Q(InstructionsLeaseIncludeDamageEviction2): When you go to court, bring a copy of the lease as well as any proof that you did not cause the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. GOTO:CourtOrderRequirement
+							A: No.
+								Q(ExplainerLeaseNotIncludeDamageEviction2): If the lease prohibits eviction for this issue, you cannot be legally evicted for it. If the lease is silent on the matter, there still could be a chance that a judge would allow eviction. 
+								A: Continue
+									Q(InstructionsLeaseNotIncludeDamageEviction2): Bring a copy of your lease to court to point out that eviction is either prohibited, or that it is at least not required. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. GOTO:CourtOrderRequirement
+						A: No.
+							Q(CheckIfLeaseRequireTenantRepair2): Does the lease require you to repair the damage in question, and allow the landlord to evict you for failing to do so?
+							A: Yes.
+								Q(ExplainerLeaseRequireTenantRepair2): The landlord will still have to prove that you failed to repair the damage. They will also have to prove that the lease allows them to evict you for failing to repair this damage.
+								A: Continue
+									Q(InstructionsLeaseRequireTenantRepair2): When you go to court, bring a copy of the lease as well as any proof that you did  repair the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. GOTO:CourtOrderRequirement
+							A: No.
+								Q(ExplainerLeaseNotRequireTenantRepair2): If the lease prohibits eviction for this issue, you cannot be legally evicted for it. If the lease is silent on the matter, there still could be a chance that a judge will allow eviction. 
+								A: Continue
+									Q(InstructionsLeaseNotRequireTenantRepair2): Bring a copy of your lease to court to point out that eviction is either prohibited, or that it is at least not required. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. GOTO:CourtOrderRequirement
+				A: Landlord claims I violated a different term of the lease.
+					Q(CheckIfInLease2): Check your lease, is the term in question actually written in the lease?
+					A: Yes.
+						Q(ExplainerInLeaseViolation2): The landlord will still have to prove that you actually violated this term of the lease. When you go to court, bring a copy of the lease as well as any proof that you did not violate that term of the lease. This will help increase the odds that the judge will find in your favor. GOTO:CourtOrderRequirement
+					A: No.
+						Q(ExplainerNotInLeaseViolation2): Many written leases include a clause explaining that nothing outside of that document is part of the lease. This means no prior agreements matter. It also means no other agreements at the time of signing the lease or after the time of signing the lease matter, unless those are signed and agreed by you and the landlord. GOTO:CourtOrderRequirement
+				A: A new landlord bought the property I am renting and claims they can evict me because my lease is with the old landlord.
+					Q(ExplainerNewLL2): When your previous landlord sells to a new landlord, your lease does not end. Your new landlord is responsible for honoring the terms of the existing lease, as are you. You must now pay rent to the new landlord, but as long as you do so and avoid violating other terms of the lease, you may not be evicted simply because a new landlord owns the premises. Try giving your new landlord [this letter] explaining this fact in case they are not yet aware. Hopefully they will honor the existing lease once they understand their duty to do so.
+					A: Continue
+						Q(InstructionsNewLL2): If the landlord persists in their claim after receiving your letter, bring [this document] to court on the day of the eviction hearing. It will explain your argument that the new landlord must honor the existing agreement. Bring a copy of the letter you gave to the landlord in case the court asks to see it. Also bring a copy of the lease to prove the existing agreement. Bring all other proof of the existing agreement if you do not have a written lease. GOTO:CourtOrderRequirement
+				A: Other reason/no reason.
+					Q(CheckIfLeaseExpiring2): Will your lease term be expired when your landlord wants you to leave?
+					A: Yes.
+						Q(ExplainerLeaseEndNotEviction2): If you have a "term of years" lease and your landlord declined to renew at the end of the term, this is regular termination rather than eviction. GOTO:ThankYou
+					A: No.
+						Q(InstructionsNotLeaseEndDOC2): You cannot be evicted without valid reason before the lease term expires. Consider sending **[this letter]** to your landlord explaining that you have a right to possession throughout the lease term as long as you pay rent as agreed in the terms of the lease. GOTO:CourtOrderRequirement
+					A: My lease is month-to-month or week-to-week.
+						Q(CheckIfNoticeGivenDiffTerm2): Did your landlord give you notice to vacate of at least one lease "period"? (one month if month-to-month, one week if week-to-week, etc.)
+						A: Yes.
+							Q(ExplainerNotEvictionDiffTerm2): A landlord may terminate this form of lease with at least one "period" of notice. This is not eviction and is legal. GOTO:ThankYou
+						A: No.
+							Q(InstructionsInsufficientNoticeDiffTermDOC2): You cannot be evicted without proper notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. Consider sending [this letter] to your landlord explaining that you have a right to possession until proper notice to vacate is given. GOTO:CourtOrderRequirement
+					A: My lease is for no fixed duration (“at will”).
+						Q(CheckIfNoticeGivenAtWill2): Did your landlord give you reasonable notice to vacate? [find "reasonable" notice for this jurisdiction]
+						A: Yes.
+							Q(ExplainerNotEvictionAtWill2): A landlord may terminate an "at will" lease with "reasonable" notice. This is not eviction and is legal. However, you may want to contact legal aid or another attorney if you believe you were not given reasonable notice to vacate.
+						A: No.
+							Q(InstructionsInsufficientNoticeAtWillDOC2): In most jurisdictions, you cannot be evicted without reasonable notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. Consider sending [this letter] to your landlord explaining that you have a right to possession until proper notice to vacate is given. GOTO:CourtOrderRequirement
+		A: No.
+			Q(ThankYou2): Thanks for visiting the Eviction Fighter! Share with your friends!
+
+
+
+
+
+
+
+
+
+
+
 
 
 A: Other
