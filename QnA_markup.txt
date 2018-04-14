@@ -31,7 +31,7 @@ A: Kentucky.
 					A: My landlord often lets me make late and/or partial payments.
 						Q(InstructionsLatepayAllowed): If your landlord has accepted late or partial payments in the past, you might have a defense against eviction for making another late or partial payment later. If your lease says the landlord accepting late or partial payment in the past does NOT alter the lease terms, you might not have this defense. Bring past payment receipts, check register and/or bank/payment card records, and any other evidence of past payments. Also bring any evidence of your landlord's acceptance of past late and/or partial payments when you appear in court for the eviction hearing. GOTO:CourtOrderRequirement
 					A: The late fees are not reasonable.
-					Q(LateFeeUnreasonable): The landlord is entitled to charge late fees if they are reasonable. A late fee is "reasonable" if it is scaled to the to inconvenience that late payment has caused the landlord, such as extra bookkeeping expenses or lost interest. Remember that even if you convince the court that the late fees charged are unreasonable, you will still be held responsible for the rent itself, and possibly also a late fee which the judge deems "reasonable". GOTO:CourtOrderRequirement
+						Q(LateFeeUnreasonable): The landlord is entitled to charge late fees if they are reasonable. A late fee is "reasonable" if it is scaled to the to inconvenience that late payment has caused the landlord, such as extra bookkeeping expenses or lost interest. Remember that even if you convince the court that the late fees charged are unreasonable, you will still be held responsible for the rent itself, and possibly also a late fee which the judge deems "reasonable". GOTO:CourtOrderRequirement
 					A: Other reason.
 						Q(InstructionsOther): I'm afraid it looks like you might not have a strong defense against eviction. Still, appear at the court hearing and bring any evidence which you think might support your reason for not paying rent as agreed. GOTO:CourtOrderRequirement
 			A: No.
@@ -123,13 +123,13 @@ A: Kentucky.
 						A: Yes.
 							Q(Resolved2): Great! GOTO:ThankYou
 						A: No.
-							Q(1.1.1.1.1.1.1.2): GOTO:CourtOrderRequirement
+							Q(1.1.2.1.1.1.1.2): GOTO:CourtOrderRequirement
 				A: No.
 					Q(CheckWhyNotPaid2): Why did you not pay rent on time and in full as agreed?
 					A: My landlord often lets me make late and/or partial payments.
 						Q(InstructionsLatepayAllowed2): If your landlord has accepted late or partial payments in the past, you might have a defense against eviction for making another late or partial payment later. If your lease says the landlord accepting late or partial payment in the past does NOT alter the lease terms, you might not have this defense. Bring past payment receipts, check register and/or bank/payment card records, and any other evidence of past payments. Also bring any evidence of your landlord's acceptance of past late and/or partial payments when you appear in court for the eviction hearing. GOTO:CourtOrderRequirement
 					A: The late fees are not reasonable.
-						Q:(LateFeeUnreasonable2): The landlord is entitled to charge late fees if they are reasonable. A late fee is "reasonable" if it is scaled to the to inconvenience that late payment has caused the landlord, such as extra bookkeeping expenses or lost interest. Remember that even if you convince the court that the late fees charged are unreasonable, you will still be held responsible for the rent itself, and possibly also a late fee which the judge deems "reasonable". GOTO:CourtOrderRequirement
+						Q(LateFeeUnreasonable2): The landlord is entitled to charge late fees if they are reasonable. A late fee is "reasonable" if it is scaled to the to inconvenience that late payment has caused the landlord, such as extra bookkeeping expenses or lost interest. Remember that even if you convince the court that the late fees charged are unreasonable, you will still be held responsible for the rent itself, and possibly also a late fee which the judge deems "reasonable". GOTO:CourtOrderRequirement
 					A: Other reason.
 						Q(InstructionsOther2): I'm afraid it looks like you might not have a strong defense against eviction. Still, appear at the court hearing and bring any evidence which you think might support your reason for not paying rent as agreed. GOTO:CourtOrderRequirement
 			A: No.
@@ -215,6 +215,7 @@ A: Continue
 			Q(14DaysOtherReason): If the reason for eviction is anything other than nonpayment of rent/fees, the landlord must give you at least 14 days after that notice to fix ("cure") your breach of the lease (when applicable) before they may file to evict you. If you are able to cure your breach within that time period and do so within those 14 days, then the landlord may not evict you for that reason. But if you previously committed this same breach and avoided eviction by curing within the last 6 months, the landlord can file for eviction after the 14-day period whether you cure or not.
 			A: Continue
 				Q(FilingAfterNotice): After the landlord files for eviction, you will be given written notice to appear at court. The notice must either be hand-delivered to a household member who is at least 16 years old, or mailed to you AND posted in plain view on the premises. The landlord must give this notice to you at least 3 days before the court date.
+				A: Continue
 					Q(CourtSummonsRequirement): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
 					A: Continue
 						Q(CourtMustAppear): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor. Bring your payment receipts, check register and/or bank/payment card records, and any other evidence of payment. Bring any correspondence between you and your landlord. Bring a copy of your lease. 
@@ -226,7 +227,7 @@ A: Continue
 	A: Continue
 		Q(NonURLTANotice): If your lease provides terms for the notice your landlord must give you to vacate or comply providing written notice to either pay any rent and/or fees you owe or otherwise "cure" your breach of the lease, then the landlord follow the instructions in your lease. If there is no relevant clause in the lease, then you have 30 days after getting notice that you have breached the lease to "cure" before your landlord may file for eviction.
 		A: Continue
-			Q: If your breach is failure to pay rent and/or fees and your landlord accepts your payment after notifying you to vacate due to failure to pay, then they may not continue with eviction proceedings based on failure to pay rent/fees.
+			Q(3.1.1.1): If your breach is failure to pay rent and/or fees and your landlord accepts your payment after notifying you to vacate due to failure to pay, then they may not continue with eviction proceedings based on failure to pay rent/fees.
 			A: Continue
 				Q(FilingAfterNotice2): After the landlord files for eviction, you will be given written notice to appear at court. The notice must either be hand-delivered to a household member who is at least 16 years old, or mailed to you AND posted in plain view on the premises. The landlord must give this notice to you at least 3 days before the court date.
 				A: Continue
@@ -234,7 +235,7 @@ A: Continue
 					A: Continue
 						Q(CourtMustAppear2): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor. Bring your payment receipts, check register and/or bank/payment card records, and any other evidence of payment. Bring any correspondence between you and your landlord. Bring a copy of your lease. 
 						A: What about my deposit?
-							Q: Even if you lose, if you owe your landlord less money than the amount of your security deposit, then you can file a suit in Small Claims court for the balance of your deposit. 
+							Q(3.1.1.1.1.1.1.1): Even if you lose, if you owe your landlord less money than the amount of your security deposit, then you can file a suit in Small Claims court for the balance of your deposit. 
 
 							But do not try to get any part of your deposit back during the Forcibile Detainer/Eviction court hearing. This attempt will fail!
 
