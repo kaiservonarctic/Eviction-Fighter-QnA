@@ -31,7 +31,7 @@ A: Kentucky.
 					A: My landlord often lets me make late and/or partial payments.
 						Q(InstructionsLatepayAllowed): If your landlord has accepted late or partial payments in the past, you might have a defense against eviction for making another late or partial payment later. If your lease says the landlord accepting late or partial payment in the past does NOT alter the lease terms, you might not have this defense. Bring past payment receipts, check register and/or bank/payment card records, and any other evidence of past payments. Also bring any evidence of your landlord's acceptance of past late and/or partial payments when you appear in court for the eviction hearing. GOTO:CourtOrderRequirement
 					A: The late fees are not reasonable.
-						Q:
+					Q(LateFeeUnreasonable): The landlord is entitled to charge late fees if they are reasonable. A late fee is "reasonable" if it is scaled to the to inconvenience that late payment has caused the landlord, such as extra bookkeeping expenses or lost interest. Remember that even if you convince the court that the late fees charged are unreasonable, you will still be held responsible for the rent itself, and possibly also a late fee which the judge deems "reasonable". GOTO:CourtOrderRequirement
 					A: Other reason.
 						Q(InstructionsOther): I'm afraid it looks like you might not have a strong defense against eviction. Still, appear at the court hearing and bring any evidence which you think might support your reason for not paying rent as agreed. GOTO:CourtOrderRequirement
 			A: No.
@@ -61,9 +61,9 @@ A: Kentucky.
 						A: Yes.
 							Q(CheckIfLeaseIncludeDamageEviction): Does the lease allow the landlord to evict you for damaging the premises beyond ordinary wear and tear?
 							A: Yes.
-								Q(ExplainerLeaseIncludeDamageEviction): The landlord will still have to prove that you actually caused the damage. They will also have to prove that the lease allows them to evict you for causing this damage.
+								Q(ExplainerLeaseIncludeDamageEviction): The landlord will still have to prove that you actually caused the damage. They will also have to prove that the lease allows them to evict you for causing this damage. Don't forget that since URLTA is effective in your jurisdiction, you have the right to "cure" (fix) the damage within 14 days after the landlord first gave you written notice. If you "cure" within this 14-day period, you may not be evicted for that damage. BUT, you can only take advantage of this right to cure if you have not taken advantage of the right to cure for the same breach within the last 6 months.
 								A: Continue
-									Q(InstructionsLeaseIncludeDamageEviction): When you go to court, bring a copy of the lease as well as any proof that you did not cause the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. GOTO:CourtOrderRequirement
+									Q(InstructionsLeaseIncludeDamageEviction): When you go to court, bring a copy of the lease. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. If you cured the breach within 14 days of the landlord's notice as described above, the landlord should halt the eviction proceeding. If you cured but the landlord insists on proceeding with the court hearing, bring proof that you "cured" as well. GOTO:CourtOrderRequirement
 							A: No.
 								Q(ExplainerLeaseNotIncludeDamageEviction): If the lease prohibits eviction for this issue, you cannot be legally evicted for it. If the lease is silent on the matter, there still could be a chance that a judge would allow eviction. 
 								A: Continue
@@ -71,9 +71,9 @@ A: Kentucky.
 						A: No.
 							Q(CheckIfLeaseRequireTenantRepair): Does the lease require you to repair the damage in question, and allow the landlord to evict you for failing to do so?
 							A: Yes.
-								Q(ExplainerLeaseRequireTenantRepair): The landlord will still have to prove that you failed to repair the damage. They will also have to prove that the lease allows them to evict you for failing to repair this damage.
+								Q(ExplainerLeaseRequireTenantRepair): The landlord will still have to prove that you failed to repair the damage. They will also have to prove that the lease allows them to evict you for failing to repair this damage. Don't forget that since URLTA is effective in your jurisdiction, you have the right to "cure" (fix) the damage within 14 days after the landlord first gave you written notice. If you "cure" within this 14-day period, you may not be evicted for that damage. BUT, you can only take advantage of this right to cure if you have not taken advantage of the right to cure for the same breach within the last 6 months.
 								A: Continue
-									Q(InstructionsLeaseRequireTenantRepair): When you go to court, bring a copy of the lease as well as any proof that you did  repair the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. GOTO:CourtOrderRequirement
+									Q(InstructionsLeaseRequireTenantRepair): When you go to court, bring a copy of the lease as well as any proof that you did repair the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. f you cured the breach within 14 days of the landlord's notice as described above, the landlord should halt the eviction proceeding. If you cured but the landlord insists on proceeding with the court hearing, bring proof that you "cured" as well. GOTO:CourtOrderRequirement
 							A: No.
 								Q(ExplainerLeaseNotRequireTenantRepair): If the lease prohibits eviction for this issue, you cannot be legally evicted for it. If the lease is silent on the matter, there still could be a chance that a judge will allow eviction. 
 								A: Continue
@@ -95,34 +95,22 @@ A: Kentucky.
 					A: No.
 						Q(InstructionsNotLeaseEndDOC): You cannot be evicted without valid reason before the lease term expires. Consider sending **[this letter]** to your landlord explaining that you have a right to possession throughout the lease term as long as you pay rent as agreed in the terms of the lease. GOTO:CourtOrderRequirement
 					A: My lease is month-to-month or week-to-week.
-						Q(CheckIfNoticeGivenDiffTerm): Did your landlord give you notice to vacate of at least one lease "period"? (one month if month-to-month, one week if week-to-week, etc.)
+						Q(CheckIfNoticeGivenDiffTerm): Did your landlord give you written notice to vacate of at least one lease "period"? (one month if month-to-month, one week if week-to-week, etc.)
 						A: Yes.
 							Q(ExplainerNotEvictionDiffTerm): A landlord may terminate this form of lease with at least one "period" of notice. This is not eviction and is legal. GOTO:ThankYou
 						A: No.
-							Q(InstructionsInsufficientNoticeDiffTermDOC): You cannot be evicted without proper notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. Consider sending [this letter] to your landlord explaining that you have a right to possession until proper notice to vacate is given. GOTO:CourtOrderRequirement
+							Q(InstructionsInsufficientNoticeDiffTermDOC): You cannot be evicted without proper written notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. GOTO:CourtOrderRequirement
 					A: My lease is for no fixed duration (“at will”).
-						Q(CheckIfNoticeGivenAtWill): Did your landlord give you reasonable notice to vacate? [find "reasonable" notice for this jurisdiction]
+						Q(CheckIfNoticeGivenAtWill): Did your landlord give you reasonable written notice to vacate? [find "reasonable" notice for this jurisdiction]
 						A: Yes.
-							Q(ExplainerNotEvictionAtWill): A landlord may terminate an "at will" lease with "reasonable" notice. This is not eviction and is legal. However, you may want to contact legal aid or another attorney if you believe you were not given reasonable notice to vacate.
+							Q(ExplainerNotEvictionAtWill): A landlord may terminate an "at will" lease with "reasonable" written notice. This is not eviction and is legal. However, you may want to contact legal aid or another attorney if you believe you were not given reasonable notice to vacate.
 						A: No.
-							Q(InstructionsInsufficientNoticeAtWillDOC): In most jurisdictions, you cannot be evicted without reasonable notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. Consider sending [this letter] to your landlord explaining that you have a right to possession until proper notice to vacate is given. GOTO:CourtOrderRequirement
+							Q(InstructionsInsufficientNoticeAtWillDOC): You cannot be evicted without reasonable written notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. GOTO:CourtOrderRequirement
 		A: No.
 			Q(ThankYou): Thanks for visiting the Eviction Fighter! Share with your friends!
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-	A: I live in another part of the state. [copy urlta template and adjust as needed]
+	A: I live in another part of the state.
 		Q(CheckIfEviction2): Got it, thanks. Do you have a landlord who is trying to evict you?
 		A: Yes.
 			Q(CheckIfReasonRent2): Is your landlord claiming you did not pay rent on time and in full as the reason to evict you?
@@ -141,7 +129,7 @@ A: Kentucky.
 					A: My landlord often lets me make late and/or partial payments.
 						Q(InstructionsLatepayAllowed2): If your landlord has accepted late or partial payments in the past, you might have a defense against eviction for making another late or partial payment later. If your lease says the landlord accepting late or partial payment in the past does NOT alter the lease terms, you might not have this defense. Bring past payment receipts, check register and/or bank/payment card records, and any other evidence of past payments. Also bring any evidence of your landlord's acceptance of past late and/or partial payments when you appear in court for the eviction hearing. GOTO:CourtOrderRequirement
 					A: The late fees are not reasonable.
-						Q:
+						Q:(LateFeeUnreasonable2): The landlord is entitled to charge late fees if they are reasonable. A late fee is "reasonable" if it is scaled to the to inconvenience that late payment has caused the landlord, such as extra bookkeeping expenses or lost interest. Remember that even if you convince the court that the late fees charged are unreasonable, you will still be held responsible for the rent itself, and possibly also a late fee which the judge deems "reasonable". GOTO:CourtOrderRequirement
 					A: Other reason.
 						Q(InstructionsOther2): I'm afraid it looks like you might not have a strong defense against eviction. Still, appear at the court hearing and bring any evidence which you think might support your reason for not paying rent as agreed. GOTO:CourtOrderRequirement
 			A: No.
@@ -163,11 +151,11 @@ A: Kentucky.
 					A: No.
 						Q(CheckIfTenantCausedDamaged2): Did you cause the damage?
 						A: Yes.
-							Q(CheckIfLeaseIncludeDamageEviction): Does the lease allow the landlord to evict you for damaging the premises beyond ordinary wear and tear?
+							Q(CheckIfLeaseIncludeDamageEviction2): Does the lease allow the landlord to evict you for damaging the premises beyond ordinary wear and tear?
 							A: Yes.
 								Q(ExplainerLeaseIncludeDamageEviction2): The landlord will still have to prove that you actually caused the damage. They will also have to prove that the lease allows them to evict you for causing this damage.
 								A: Continue
-									Q(InstructionsLeaseIncludeDamageEviction2): When you go to court, bring a copy of the lease as well as any proof that you did not cause the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. GOTO:CourtOrderRequirement
+									Q(InstructionsLeaseIncludeDamageEviction2): When you go to court, bring a copy of the lease. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. GOTO:CourtOrderRequirement
 							A: No.
 								Q(ExplainerLeaseNotIncludeDamageEviction2): If the lease prohibits eviction for this issue, you cannot be legally evicted for it. If the lease is silent on the matter, there still could be a chance that a judge would allow eviction. 
 								A: Continue
@@ -177,7 +165,7 @@ A: Kentucky.
 							A: Yes.
 								Q(ExplainerLeaseRequireTenantRepair2): The landlord will still have to prove that you failed to repair the damage. They will also have to prove that the lease allows them to evict you for failing to repair this damage.
 								A: Continue
-									Q(InstructionsLeaseRequireTenantRepair2): When you go to court, bring a copy of the lease as well as any proof that you did  repair the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. GOTO:CourtOrderRequirement
+									Q(InstructionsLeaseRequireTenantRepair2): When you go to court, bring a copy of the lease as well as any proof that you did repair the damage in question. This will help increase the odds that the judge will find in your favor. You may want to bring your own photos and other documentation of the damage in case the landlord attempts to exaggerate the level of damage to the court. GOTO:CourtOrderRequirement
 							A: No.
 								Q(ExplainerLeaseNotRequireTenantRepair2): If the lease prohibits eviction for this issue, you cannot be legally evicted for it. If the lease is silent on the matter, there still could be a chance that a judge will allow eviction. 
 								A: Continue
@@ -205,35 +193,48 @@ A: Kentucky.
 						A: No.
 							Q(InstructionsInsufficientNoticeDiffTermDOC2): You cannot be evicted without proper notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. Consider sending [this letter] to your landlord explaining that you have a right to possession until proper notice to vacate is given. GOTO:CourtOrderRequirement
 					A: My lease is for no fixed duration (“at will”).
-						Q(CheckIfNoticeGivenAtWill2): Did your landlord give you reasonable notice to vacate? [find "reasonable" notice for this jurisdiction]
+						Q(CheckIfNoticeGivenAtWill2): Did your landlord give you reasonable written notice to vacate? [find "reasonable" notice for this jurisdiction]
 						A: Yes.
-							Q(ExplainerNotEvictionAtWill2): A landlord may terminate an "at will" lease with "reasonable" notice. This is not eviction and is legal. However, you may want to contact legal aid or another attorney if you believe you were not given reasonable notice to vacate.
+							Q(ExplainerNotEvictionAtWill2): A landlord may terminate an "at will" lease with "reasonable" written notice. This is not eviction and is legal. However, you may want to contact legal aid or another attorney if you believe you were not given reasonable notice to vacate.
 						A: No.
-							Q(InstructionsInsufficientNoticeAtWillDOC2): In most jurisdictions, you cannot be evicted without reasonable notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. Consider sending [this letter] to your landlord explaining that you have a right to possession until proper notice to vacate is given. GOTO:CourtOrderRequirement
+							Q(InstructionsInsufficientNoticeAtWillDOC2): In most jurisdictions, you cannot be evicted without reasonable written notice as long as you have paid rent as agreed and otherwise upheld your end of the lease agreement. GOTO:CourtOrderRequirement
 		A: No.
 			Q(ThankYou2): Thanks for visiting the Eviction Fighter! Share with your friends!
-
-
-
-
-
-
-
-
-
-
-
 
 
 A: Other
 	Q(NoBot): Landlord-tenant laws vary between states and sometimes even between cities. The information from this chatbot might not be accurate for where you live.
 
 
-
 Q(CourtOrderRequirement): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
 A: Continue
-	Q(CourtSummonsRequirement): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+	Q(NoticeBeforeFile): The first step a landlord must take toward eviction is delivering you written notice that you have breached the lease and that they will ask the court order eviction if you do not address the problem quickly. This notice may be hand-delivered or sent by certified or registered mail.
 	A: Continue
-		Q(CourtMustAppear): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor. Bring your payment receipts, check register and/or bank/payment card records, and any other evidence of payment. Bring any correspondence between you and your landlord. Bring a copy of your lease. And bring the following document outlining your defense for the court... GOTO:DOC-DEFENSE-OUTLINE
+		Q(7DaysRent): If the reason for eviction is nonpayment of rent/fees, the landlord must give you at least 7 days after that notice to pay in full before they may file to evict you. If you pay within that 7-day period, they must accept payment rather than proceeding to evict. The landlord does not have to accept payment after 7 days, but may not continue with eviction proceedings if they do accept your full payment after that 7 day period has ended.
+		A: Continue
+			Q(14DaysOtherReason): If the reason for eviction is anything other than nonpayment of rent/fees, the landlord must give you at least 14 days after that notice to fix ("cure") your breach of the lease (when applicable) before they may file to evict you. If you are able to cure your breach within that time period and do so within those 14 days, then the landlord may not evict you for that reason. But if you previously committed this same breach and avoided eviction by curing within the last 6 months, the landlord can file for eviction after the 14-day period whether you cure or not.
+			A: Continue
+				Q(FilingAfterNotice): After the landlord files for eviction, you will be given written notice to appear at court. The notice must either be hand-delivered to a household member who is at least 16 years old, or mailed to you AND posted in plain view on the premises. The landlord must give this notice to you at least 3 days before the court date.
+					Q(CourtSummonsRequirement): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+					A: Continue
+						Q(CourtMustAppear): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor. Bring your payment receipts, check register and/or bank/payment card records, and any other evidence of payment. Bring any correspondence between you and your landlord. Bring a copy of your lease. 
 
-Q(DOC-DEFENSE-OUTLINE): DOC **[Customizing based on rent amount, terms, etc]**
+
+Q(CourtOrderRequirement2): Remember that your landlord MAY NOT evict you without a COURT ORDER. If they engage in "self-help" such as changing your locks, removing your possessions, or using force against you, they have broken the law and may be sued or in some cases even arrested.
+A: Continue
+	Q(NoticeBeforeFile2): The first step a landlord must take toward eviction is delivering you written notice that you have breached the lease and that they will ask the court order eviction if you do not address the problem quickly. This notice may be hand-delivered or sent by certified or registered mail.
+	A: Continue
+		Q(NonURLTANotice): If your lease provides terms for the notice your landlord must give you to vacate or comply providing written notice to either pay any rent and/or fees you owe or otherwise "cure" your breach of the lease, then the landlord follow the instructions in your lease. If there is no relevant clause in the lease, then you have 30 days after getting notice that you have breached the lease to "cure" before your landlord may file for eviction.
+		A: Continue
+			Q: If your breach is failure to pay rent and/or fees and your landlord accepts your payment after notifying you to vacate due to failure to pay, then they may not continue with eviction proceedings based on failure to pay rent/fees.
+			A: Continue
+				Q(FilingAfterNotice2): After the landlord files for eviction, you will be given written notice to appear at court. The notice must either be hand-delivered to a household member who is at least 16 years old, or mailed to you AND posted in plain view on the premises. The landlord must give this notice to you at least 3 days before the court date.
+				A: Continue
+					Q(CourtSummonsRequirement2): Before the court orders eviction, there must be a hearing. Until you get a SUMMONS delivered in person or by mail, there can be no hearing.
+					A: Continue
+						Q(CourtMustAppear2): Be sure to appear in court on the date and time listed in your summons! If you don't defend yourself you could lose even if the facts are in your favor. Bring your payment receipts, check register and/or bank/payment card records, and any other evidence of payment. Bring any correspondence between you and your landlord. Bring a copy of your lease. 
+						A: What about my deposit?
+							Q: Even if you lose, if you owe your landlord less money than the amount of your security deposit, then you can file a suit in Small Claims court for the balance of your deposit. 
+
+							But do not try to get any part of your deposit back during the Forcibile Detainer/Eviction court hearing. This attempt will fail!
+
